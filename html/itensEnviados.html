@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/CaixaDeEntrada.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Itens Enviados</title>
+</head>
+
+<body>
+    <div class="tela">
+        <header class="header">
+            <a href="../html/login.html"><i id="iconUser" class="fas fa-user"></i></a>
+            <h4 id="nome">Deslogar</h4>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Buscar">
+                <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+
+            </div>
+        </header>
+        <main>
+            <div id="titulo">Itens Enviados</div>
+        
+        </main>
+
+        <aside class="menu">
+
+
+            <nav class="nav">
+                <table>
+                    <tr>
+                        <td><button id="novaMensagem" onclick="location.href='../html/novaMensagem.html'"><i class="fas fa-plus-circle"></i>  Nova Mensagem</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="favorito" ><i class="fas fa-star"></i>  Favorito</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="caixa_de_entrada" onclick="location.href='../html/CaixaDeEntrada.html'"><i class="fas fa-envelope"></i>  Caixa de Entrada</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="lixo"><i class="fas fa-recycle"></i>  Lixo Eletrônico</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="rascunho"><i class="fas fa-pencil-alt"></i> Rascunho</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="enviados" onclick="location.href='../html/itensEnviados.html'"><i class="far fa-paper-plane"></i>  Itens Enviados</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="excluidos" onclick="location.href='../html/itensExcluidos.html'"><i class="fas fa-trash-alt"></i>  Itens Excluidos</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="arquivo"><i class="fas fa-archive"></i>  Arquivo Morto</button></td>
+                    </tr>
+                </table>
+            </nav>
+
+
+        </aside>
+    </div>
+</body>
+
+
+
+</html>

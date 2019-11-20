@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+            <input type="text" id="usuario">
+            <span data-placeholder="Usuário"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="senha">
+            <span data-placeholder="Senha"></span>
+        </div>
+
+        <input onclick="login()" type="button" class="logbtn" value="Entrar">
+
+        <div class="bottom-text">
+            Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+    </div>
+
+    <ul class="squares"></ul>
+
+    <script src="../js/loginAnimation.js"></script>
+
+</body>
+<script src="../js/login.js"></script>
+
+</html>

@@ -1,0 +1,15 @@
+<email>
+    <enviador>
+        Fernando Oliveira
+    </enviador>
+    <assunto>
+        Entrega do pacote
+    </assunto>
+    <resumo>
+        Seu pedido chegou
+    </resumo>
+    <mensagem>
+        Seu pedido acabou de chagar em seu destino, 
+        foi deixado na sua porta principal
+    </mensagem>
+</email>
