@@ -24,4 +24,20 @@ $retorno["enviador2"] = trim($xml_objeto->enviador);
 $retorno["assunto2"] = trim($xml_objeto->assunto);
 $retorno["resumo2"] = trim($xml_objeto->resumo);
 
+$xml_string = file_get_contents("xml/email04.xml");
+
+$xml_objeto = simplexml_load_string($xml_string);
+
+$retorno["enviador3"] = trim($xml_objeto->enviador);
+$retorno["assunto3"] = trim($xml_objeto->assunto);
+$retorno["resumo3"] = trim($xml_objeto->resumo);
+
+$xml_string = file_get_contents("xml/email05.xml");
+
+$xml_objeto = simplexml_load_string($xml_string);
+
+$retorno["enviador4"] = trim($xml_objeto->enviador);
+$retorno["assunto4"] = trim($xml_objeto->assunto);
+$retorno["resumo4"] = trim($xml_objeto->resumo);
+
 echo json_encode($retorno);

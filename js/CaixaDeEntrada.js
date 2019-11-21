@@ -24,6 +24,16 @@ $.ajax({
         conteudo += "<a class=" + seg + " href=# >" + retorno.assunto2 + "</a>";
         conteudo += "<a class=" + ter +" href=# >" + retorno.resumo2 + "</a>";
         conteudo += "</li>";
+        conteudo += "<li>";
+        conteudo += "<a class=" + pri + " href=# >" + retorno.enviador3 + "</a>";
+        conteudo += "<a class=" + seg + " href=# >" + retorno.assunto3 + "</a>";
+        conteudo += "<a class=" + ter +" href=# >" + retorno.resumo3 + "</a>";
+        conteudo += "</li>";
+        conteudo += "<li>";
+        conteudo += "<a class=" + pri + " href=# >" + retorno.enviador4 + "</a>";
+        conteudo += "<a class=" + seg + " href=# >" + retorno.assunto4 + "</a>";
+        conteudo += "<a class=" + ter +" href=# >" + retorno.resumo4 + "</a>";
+        conteudo += "</li>";
 
         $("#ListaEntrada").html(conteudo);
 
