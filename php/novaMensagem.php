@@ -5,34 +5,29 @@ $Cc = trim($_POST['Cc']);
 $assunto = trim($_POST['assunto']);
 $texto = trim($_POST['texto']);
 
-if(isset($_POST['enviar'])){
-    $xml = new DOMDocument("1.0");
 
-    $xml->preserveWhiteSpace = false;
+$xml = new DOMDocument("1.0");
 
-    $xml->formatOutput = true;
+$xml->preserveWhiteSpace = false;
 
-    $root = $xml->createElement("email");
+$xml->formatOutput = true;
 
-    $para = $xml->createElement("para", $para);
-    $Cc = $xml->createElement("Cc", $Cc);
-    $assunto = $xml->createElement("assunto", $assunto);
-    $texto = $xml->createElement("texto", $texto);
+$root = $xml->createElement("email");
 
-    $root->appendChild($para);
-    $root->appendChild($Cc);
-    $root->appendChild($assunto);
-    $root->appendChild($texto);
+$para = $xml->createElement("para", "$para");
+$Cc = $xml->createElement("Cc", "$Cc");
+$assunto = $xml->createElement("assunto", "$assunto");
+$texto = $xml->createElement("texto", "$texto");
 
-    $xml->appendChild($root);
+$root->appendChild($para);
+$root->appendChild($Cc);
+$root->appendChild($assunto);
+$root->appendChild($texto);
 
-    $xml->save("xml/email.xml");
+$xml->appendChild($root);
 
-
-
-     $retorno["mensagem"] = print $xml->saveXML();
+$xml->save("xml/email.xml");
 
 
 
-
-}
+$retorno["mensagem"] = 1;

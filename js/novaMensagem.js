@@ -1,4 +1,4 @@
-$("#enviar").click(function(){
+$("#enviar").click(function () {
     $.ajax({
         type: "POST",
         dataType: "json",
@@ -9,8 +9,11 @@ $("#enviar").click(function(){
             assunto: $("#assunto").val(),
             texto: $("#texto").val()
         },
-        success: function(retorno){
-            $("#retorno").html(retorno.mensagem);
+        success: function (retorno) {
+            if(retorno.mensagem == 1){
+                location.href="../html/novaMensagem.html";
+            }
         }
     })
+
 })
