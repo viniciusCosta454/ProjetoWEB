@@ -1,0 +1,15 @@
+<email>
+    <enviador>
+        Fernando Silva
+    </enviador>
+    <assunto>
+        Entrega do chocolate ao leite
+    </assunto>
+    <resumo>
+        Seu pedido chegou
+    </resumo>
+    <mensagem>
+        Seu pedido acabou de chegar em seu destino, 
+        foi deixado na sua porta principal
+    </mensagem>
+</email>

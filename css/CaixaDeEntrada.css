@@ -238,7 +238,7 @@ aside {
     margin: 0;
     padding: 0;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 
   }
 .ListaEntrada a {
@@ -255,5 +255,10 @@ aside {
 }
 .ListaEntrada li {
     text-align: center;
-    padding: 50px 0px 50px 0px
+    padding: 15px 20px 15px 0px;
+    border: solid;
+    border-color: #1e2227;
+    height: 30px;
+    width: 2/3;
 }
+
